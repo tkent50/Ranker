@@ -11,7 +11,7 @@ cursor.execute("delete from Players")
 comparison = re.compile(r'^(?P<name>.+?) - (?P<IGN>.+?$)')
 f = open('output.txt','w')
 
-file = open(sys.argv[0])
+file = open("List.txt")
 for line in file:
 	m=comparison.search(line)
 	try:
